@@ -1,0 +1,156 @@
+body{
+    color: black;
+    font-family: sans-serif;
+}
+
+header a{
+    color: black;
+}
+
+.homebutton.disabled{
+    background-color: #eee;
+    cursor: default;
+}
+
+.homebutton.disabled a{
+    cursor: default;
+}
+
+.homebutton.disabled:hover{
+    box-shadow: none;
+}
+
+header{
+    position: fixed;
+    height: 70px;
+    background-color: #a12283;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.headerknop:link, .headerknop:visited{
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 20px;
+    margin: auto 30px;
+    top: 24px;
+    text-decoration: none;
+    color: black;
+    background-color: #aaa;
+    text-align: center;
+    border-radius: 25px;
+    float: right;
+}
+
+#regisknop:link, #inlogknop:link{
+    margin: auto 10px;
+}
+
+section{
+    top: 80px;
+    position: relative;
+}
+
+#login{
+    position: relative;
+    margin: auto;
+    top: 100px;
+    width: 300px;
+    border: 1px solid white;
+}
+
+#login td{
+    border: none;
+}
+
+header h1{
+    display: inline-block;
+    color: white;
+    margin-left: 180px;
+    font-size: 32px;
+}
+
+section{
+    text-align: center;
+}
+
+.homebutton{
+    display: inline-block;
+    background-color: #bbb;
+    height: 200px;
+    width: 200px;
+    margin: 40px 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.homebutton:hover{
+    background-color: #333;
+    color: white;
+}
+
+.homebutton img{
+    width: 150px;
+}
+
+.homebutton a{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+table{
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+thead{
+    font-weight: bold;
+}
+td{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 1px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xdebug-error{
+    color: black;
+    z-index: 1000;
+}
+
+tr.link:hover{
+    background-color: #a12283;
+}
+
+tr a:link, tr a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+input[type=search]{
+    border-radius: 20px;
+}
+
+.paginate_button.current{
+    background: #a12283 !important;
+    border: 1px solid white !important;
+}
+
+.paginate_button:hover{
+    background: #777 !important;
+    border: 1px solid white !important;
+}
+
+.paginate_button.disabled:hover{
+    background: white !important;
+    border: 1px solid white !important;
+}
