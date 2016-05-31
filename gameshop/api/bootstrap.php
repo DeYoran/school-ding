@@ -26,9 +26,9 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"), $i
 $conn = array(
     'driver'   => 'pdo_mysql',
     'host'     => '127.0.0.1',
-    'dbname'   => 'game',
-    'user'     => 'root',
-    'password' => ''
+    'dbname'   => 'sygnaln_game',
+    'user'     => 'sygnaln',
+    'password' => 'adfd08ad'
 );
 
 

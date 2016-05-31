@@ -1,7 +1,15 @@
 <?php
-require_once('engine/model/Gebruiker.php');
+require_once('engine/model/gebruiker.php');
+require_once('engine/model/Platformgame.php');
+require_once('engine/model/game.php');
+require_once('engine/model/bestelregel.php');
+require_once('engine/model/bestelling.php');
 include('../mpdf60/mpdf.php');
 use Engine\Model\Gebruiker;
+
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 
 set_error_handler("error");
 
@@ -20,7 +28,7 @@ call_user_func($_GET['action']);
 
 function getGameInfo(){
     global $em;
-    $pgame = $em->getRepository("Engine\Model\Platformgame")->find($_GET['game']);
+    $pgame = $em->getRepository("Engine\\Model\\Platformgame")->find($_GET['game']);
     $gameid = $pgame->getGame()->getGameId();
     $game = $em->getRepository("Engine\Model\Game")->find($gameid);
     $html='
@@ -37,7 +45,7 @@ function getGameInfo(){
 
 function getGames(){
     global $em;
-    $pgames = $em->getRepository("Engine\Model\Platformgame")->findAll();
+    $pgames = $em->getRepository("Engine\\Model\\Platformgame")->findAll();
     $return['html'] = '';
     foreach ($pgames as $pgame) {
         if($_GET['platform'] == 'all' || strtolower(str_replace(' ', '_', $pgame->getPlatform())) == strtolower($_GET['platform'])){

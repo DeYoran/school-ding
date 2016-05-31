@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
-    'Engine\\Model\\' => array($baseDir . '/engine/model'),
+    'Engine\\Model\\' => array($baseDir . '/api/engine/model'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
 );
