@@ -132,7 +132,7 @@ INSERT INTO `gebruiker` (`klantnr`, `emailadres`, `wachtwoord`, `salt`, `naam`, 
 (0, 'yoran.engelberst@gmail.cna', '$dm1!m', 'Dolfijntjes', 'Yoran', 'viswater', NULL, NULL, NULL, NULL),
 (1, 'yoran.engelberst@gmail.com', '$dm1!m', 'Dolfijntjes', 'Yoran', 'viswater', NULL, NULL, NULL, NULL),
 (2, 'yoran.engelberst@gmail.come', 'C14in!', 'Dolfijntjes', 'Yoran', 'viswater', NULL, NULL, NULL, NULL),
-(3, 'yoran.engelberst@gmail.cn', '$dm1!m', 'Dolfijntjes', 'Yoran', 'viswater', NULL, NULL, NULL, NULL);
+(3, 'gameshopmailtest@gmail.com', '$dm1!m', 'Dolfijntjes', 'Yoran', 'viswater', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
