@@ -35,7 +35,6 @@ class addGameController implements iController
                }
                case 'voorverkoop':{
                 $verkoopstart  = new DateTime();
-                var_dump($verkoopstart);
                    $game->setStartVerkoop($verkoopstart);
                    break;
                }
@@ -57,7 +56,6 @@ class addGameController implements iController
            $game->setOmschrijving('null');
            $game->setBesturing('controller');
            $game->setGameid(date('U'));
-           var_dump($game);
            $entityManager->persist($game);
            $entityManager->flush();
            header("Location: /gameshop/games");
