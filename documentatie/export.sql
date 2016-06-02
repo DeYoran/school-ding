@@ -100,7 +100,7 @@ INSERT INTO `game` (`gameId`, `verkoopprijs`, `inkoopprijs`, `releasedatum`, `om
 (5, 3999, 2999, '2015-09-03', 'racespel', '', NULL, 'Project cars', '2015-08-03'),
 (6, 5999, 4200, '2014-04-16', 'mariokart 8', '', NULL, 'Mario kart 8', '2016-08-03'),
 (1452788993, 2700, 2400, '2016-01-22', 'fdsahifd', 'controller', NULL, 'Testspel', '2016-01-22'),
-(1453302570, 25, 2300, '2016-01-13', 'null', 'controller', NULL, 'need for speed Speciale editie', '2016-01-13')
+(1453302570, 25, 2300, '2016-01-13', 'null', 'controller', NULL, 'need for speed Speciale editie', '2016-01-13');
 
 -- --------------------------------------------------------
 
