@@ -1,6 +1,0 @@
-AddType text/css .less
-<IfModule mod_rewrite.c>
-    RewriteCond %{REQUEST_URI} !(\.jpg|\.php|\.css|\.less|\.woff|\.ttf|\.html|\.js|\.mp3|\.png)$ [NC]
-    RewriteEngine On
-    RewriteRule ^(?!index\.html).* index.html?url=$0 [L]
-</IfModule>

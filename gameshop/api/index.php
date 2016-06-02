@@ -1,11 +1,12 @@
 <?php
 require_once('engine/model/gebruiker.php');
-require_once('engine/model/Platformgame.php');
+require_once('engine/model/platformgame.php');
 require_once('engine/model/game.php');
 require_once('engine/model/bestelregel.php');
 require_once('engine/model/bestelling.php');
 include('../mpdf60/mpdf.php');
 use Engine\Model\Gebruiker;
+
 
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
