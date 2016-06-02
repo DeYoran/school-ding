@@ -282,18 +282,6 @@ ALTER TABLE `gebruikerrol`
   ADD CONSTRAINT `fk_Gebruikers_has_Rollen_Gebruikers` FOREIGN KEY (`gebruiker`) REFERENCES `gebruiker` (`klantnr`) ON DELETE CASCADE ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_Gebruikers_has_Rollen_Rollen1` FOREIGN KEY (`rol`) REFERENCES `rol` (`rol`) ON DELETE CASCADE ON UPDATE CASCADE;
 
---
--- Beperkingen voor tabel `platformgame`
---
-ALTER TABLE `platformgame`
-  ADD CONSTRAINT `fk_Platform_has_Games_Games1` FOREIGN KEY (`gameId`) REFERENCES `game` (`gameId`) ON DELETE CASCADE ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Platform_has_Games_Platform1` FOREIGN KEY (`platform`) REFERENCES `platform` (`naam`) ON DELETE CASCADE ON UPDATE NO ACTION;
-
---
--- Beperkingen voor tabel `verkoopbarevoorraad`
---
-ALTER TABLE `verkoopbarevoorraad`
-  ADD CONSTRAINT `fk_verkoopbarevoorraad_platformgame1` FOREIGN KEY (`platformgame_platformgameid`) REFERENCES `platformgame` (`platformgameid`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
